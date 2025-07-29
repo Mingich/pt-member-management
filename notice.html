@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>공지사항</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/notice.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <a href="dashboard.html">대시보드</a>
+    <a href="notice.html">공지사항</a>
+    <a href="chat.html">채팅</a>
+    <a href="index.html" onclick="localStorage.removeItem('currentUser')">로그아웃</a>
+  </div>
+  <div class="container">
+    <h2>공지사항</h2>
+    <div id="noticeList"></div>
+    <textarea id="noticeText" placeholder="공지사항 작성 (관리자만)"></textarea>
+    <button id="postNoticeBtn">등록</button>
+  </div>
+</body>
+</html>
